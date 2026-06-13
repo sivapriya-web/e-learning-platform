@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EduVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            EduVerse
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="profile.html">Profile</a>
+
+            <button id="themeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+        </nav>
+
+    </header>
+
+    <!-- DASHBOARD HEADER -->
+
+    <section class="dashboard-header">
+
+        <div>
+
+            <h1>Welcome Back 👋</h1>
+
+            <p>
+                Continue your learning journey and track progress.
+            </p>
+
+        </div>
+
+        <button class="primary-btn">
+            Resume Learning
+        </button>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section class="dashboard-stats">
+
+        <div class="dashboard-card">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <h2>12</h2>
+
+            <p>Courses Enrolled</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <h2>8</h2>
+
+            <p>Completed Courses</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <i class="fa-solid fa-certificate"></i>
+
+            <h2>6</h2>
+
+            <p>Certificates Earned</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h2>120h</h2>
+
+            <p>Learning Hours</p>
+
+        </div>
+
+    </section>
+
+    <!-- PROGRESS -->
+
+    <section class="progress-overview">
+
+        <div class="progress-card">
+
+            <h2>Overall Progress</h2>
+
+            <div class="progress-container">
+
+                <div
+                    class="progress-fill"
+                    id="dashboardProgress">
+                </div>
+
+            </div>
+
+            <p id="dashboardText">
+                0% Completed
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ENROLLED COURSES -->
+
+    <section class="enrolled-courses">
+
+        <div class="section-title">
+
+            <h2>My Courses</h2>
+
+        </div>
+
+        <div class="course-table">
+
+            <div class="table-row">
+
+                <span>Frontend Development</span>
+
+                <span>70%</span>
+
+                <button>
+                    Continue
+                </button>
+
+            </div>
+
+            <div class="table-row">
+
+                <span>Python Masterclass</span>
+
+                <span>50%</span>
+
+                <button>
+                    Continue
+                </button>
+
+            </div>
+
+            <div class="table-row">
+
+                <span>UI/UX Design</span>
+
+                <span>100%</span>
+
+                <button>
+                    Review
+                </button>
+
+            </div>
+
+            <div class="table-row">
+
+                <span>AI Fundamentals</span>
+
+                <span>30%</span>
+
+                <button>
+                    Continue
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RECENT ACTIVITY -->
+
+    <section class="activity-section">
+
+        <div class="section-title">
+
+            <h2>Recent Activity</h2>
+
+        </div>
+
+        <div class="activity-list">
+
+            <div class="activity-item">
+
+                <i class="fa-solid fa-check"></i>
+
+                <div>
+
+                    <h4>
+                        Completed JavaScript Module
+                    </h4>
+
+                    <p>
+                        2 hours ago
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <i class="fa-solid fa-play"></i>
+
+                <div>
+
+                    <h4>
+                        Watched React Fundamentals
+                    </h4>
+
+                    <p>
+                        Yesterday
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <i class="fa-solid fa-certificate"></i>
+
+                <div>
+
+                    <h4>
+                        Earned UI Design Certificate
+                    </h4>
+
+                    <p>
+                        3 days ago
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CERTIFICATES -->
+
+    <section class="certificate-section">
+
+        <div class="section-title">
+
+            <h2>My Certificates</h2>
+
+        </div>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>
+                    UI Design Certificate
+                </h3>
+
+                <button>
+                    Download
+                </button>
+
+            </div>
+
+            <div class="certificate-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>
+                    HTML & CSS Certificate
+                </h3>
+
+                <button>
+                    Download
+                </button>
+
+            </div>
+
+            <div class="certificate-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>
+                    JavaScript Certificate
+                </h3>
+
+                <button>
+                    Download
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LEARNING GOALS -->
+
+    <section class="goals-section">
+
+        <div class="section-title">
+
+            <h2>Learning Goals</h2>
+
+        </div>
+
+        <div class="goals-grid">
+
+            <div class="goal-card">
+
+                <h3>Weekly Goal</h3>
+
+                <p>
+                    10 Hours Learning
+                </p>
+
+                <div class="mini-progress">
+
+                    <div style="width:70%">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="goal-card">
+
+                <h3>Monthly Goal</h3>
+
+                <p>
+                    Complete 2 Courses
+                </p>
+
+                <div class="mini-progress">
+
+                    <div style="width:60%">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RECOMMENDED COURSES -->
+
+    <section class="recommended-section">
+
+        <div class="section-title">
+
+            <h2>Recommended For You</h2>
+
+        </div>
+
+        <div class="recommended-grid">
+
+            <div class="recommend-card">
+
+                <h3>React Advanced</h3>
+
+                <p>
+                    Build scalable applications.
+                </p>
+
+            </div>
+
+            <div class="recommend-card">
+
+                <h3>Node.js Backend</h3>
+
+                <p>
+                    Learn APIs and databases.
+                </p>
+
+            </div>
+
+            <div class="recommend-card">
+
+                <h3>Figma Mastery</h3>
+
+                <p>
+                    Professional UI design workflow.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>EduVerse</h3>
+
+                <p>
+                    Your personalized learning platform.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="courses.html">Courses</a>
+                <a href="profile.html">Profile</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>support@eduverse.com</p>
+                <p>+91 9876543210</p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 EduVerse. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
